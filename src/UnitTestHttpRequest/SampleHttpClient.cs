@@ -29,7 +29,7 @@ namespace UnitTestHttpRequest
             _builder = () => new HttpClient();
         }
 
-        public SampleHttpClient(string instanceUrl, string apiVersion, string accessToken, Func<HttpClient> builder )
+        public SampleHttpClient(string instanceUrl, string apiVersion, string accessToken, Func<HttpClient> builder)
         {
             _instanceUrl = instanceUrl;
             _apiVersion = apiVersion;

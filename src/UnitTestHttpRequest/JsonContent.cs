@@ -9,7 +9,6 @@ namespace UnitTestHttpRequest
 {
     internal class JsonContent : HttpContent
     {
-
         private readonly MemoryStream _stream = new MemoryStream();
         public JsonContent(object value)
         {

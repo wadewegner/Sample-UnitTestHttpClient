@@ -26,9 +26,9 @@ namespace UnitTestHttpRequest
 
             Func<HttpClient> builder = () => client;
 
-            var toolkitHttpClient = new SampleHttpClient("http://localhost:1899", "v1", "accessToken", builder);
+            var sampleHttpClient = new SampleHttpClient("http://localhost:1899", "v1", "accessToken", builder);
 
-            await toolkitHttpClient.HttpGet<object>("querystring");
-        } 
+            await sampleHttpClient.HttpGet<object>("querystring");
+        }
     }
 }
